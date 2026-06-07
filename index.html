@@ -2,238 +2,421 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+    <title>SkillUp Institute</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm" id="navbar-s">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="logo.jpg" alt="logo" width="100" height="80">
-                <!-- SkillUp Institute -->
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
+
+                <img src="logo.jpg"
+                     width="50"
+                     height="50"
+                     class="rounded-circle me-2">
+
+                SkillUp Institute
+
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggle-icon"></span>
+
+            <button class="navbar-toggler"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
             </button>
-            <div class=" collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
+
+            <div class="collapse navbar-collapse"
+                 id="navbarNav">
+
+                <ul class="navbar-nav ms-auto align-items-center">
+
                     <li class="nav-item">
-                        <a href="#" class="nav-link active">Home</a>
+                        <a class="nav-link active"
+                           href="#home">
+                            Home
+                        </a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Courses</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#" class="dropdown-item">CSE</a></li>
-                            <li><a href="#" class="dropdown-item">AIML</a></li>
-                            <li><a href="#" class="dropdown-item">ECE</a></li>
-                            <li><a href="#" class="dropdown-item">EEE</a></li>
-                        </ul>
-                    </li>
+
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About</a>
+                        <a class="nav-link"
+                           href="courses.html">
+                            Courses
+                        </a>
                     </li>
+
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <a class="nav-link"
+                           href="about.html">
+                            About Us
+                        </a>
                     </li>
-                    <button class="btn btn-primary me-2">
-                        Login
-                    </button>
-                    <button class="btn btn-light" onclick="ToggleDarkMode()">
-                        Dark Mode
-                    </button>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-2">
+
+                        <a href="Registration.html"
+                           class="btn btn-outline-light">
+
+                            Register Now
+
+                        </a>
+
+                    </li>
+
                 </ul>
+
             </div>
+
         </div>
+
     </nav>
 
-    <div class="carousel slide p-5" id="carouselEx">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-4 h-150">
-                            <div class="card" style="width:18rem;height:550px">
-                                <img src="python.jpg" alt="python" width="286px" height="150px">
-                                <div class="card-body">
-                                    <h5 class="card-title">Python</h5>
-                                    <p class="card-text">
-                                        Start from scratch or sharpen your core logic. Learn variables, data structures,
-                                        and object-oriented programming with interactive, easy-to-digest exercises.
-                                        Expand your skill set with specialized tracks in Machine Learning, Django/Flask
-                                        web frameworks, and advanced API development.
-                                        <br>
-                                        <strong>Duration:</strong>25 May-31 August
-                                    </p>
-                                    <a href="#">
-                                        <button type="button" class="btn btn-primary">View Details</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4 h-150">
-                            <div class="card" style="width:18rem;height:550px">
-                                <img src="java.png" alt="JAVA" width="286px" height="150px">
-                                <div class="card-body">
-                                    <h5 class="card-title">Java Programming</h5>
-                                    <p class="card-text">
-                                        Java Fundamentals, OOPs Concepts, Multithreading, Exception Handling, and
-                                        Collections Framework.
-                                        JDBC, Servlets, JSP, Hibernate, and RESTful API development for robust backends.
-                                        Spring Boot, Spring MVC, Spring Data JPA, and Microservices Architecture.
-                                        <br>
-                                        <strong>Duration:</strong>
-                                        25 May-31 Augest
-                                    </p>
-                                    <a href="#">
-                                        <button type="button" class="btn btn-primary">View Details</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card" style="width:18rem;height:550px">
-                                <img src="aiml.jpg" alt="AIML" width="286px" height="150px">
-                                <div class="card-body">
-                                    <h5 class="card-title">Artificial Intelligence and Manchine Learning</h5>
-                                    <p class="card-text">
-                                        Python Programming, Advanced Linear Algebra, and Statistics.
-                                        Supervised/Unsupervised Learning, Decision Trees, and Ensemble Methods.
-                                        Neural Networks, Computer Vision (CNNs), and NLP (Transformers).
-                                        <br><strong>Duration:</strong>30 May-5 October
-                                    </p>
-                                    <a href="#">
-                                        <button type="button" class="btn btn-primary">View Details</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="card" style="width:18rem;height:500px">
-                                <img src="pythonfsd.jpg" alt="python FSD" width="286px" height="150px">
-                                <div class="card-body">
-                                    <h5 class="card-title">Python Full Stack</h5>
-                                    <p class="card-text">
-                                        Our Python FSD program is designed for beginners and professionals alike. Master
-                                        frontend, database, and backend technologies to become an industry-ready expert.
-                                        Build powerful server-side logic, REST APIs, and dynamic applications using
-                                        Python and frameworks.
+    <!-- HERO SECTION -->
 
+    <section id="home" class="hero-section">
 
-                                        <strong>Duration:</strong>25 May-31 Augest
-                                    </p>
-                                    <a href="#">
-                                        <button type="button" class="btn btn-primary">View Details</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card" style="width:18rem;height:550px">
-                                <img src="javafsd.png" alt="java FSD" width="286px" height="150px">
-                                <div class="card-body">
-                                    <h5 class="card-title">Java Full Stack</h5>
-                                    <p class="card-text">
-                                        Core Java & Advanced Java (J2EE)
-                                        Spring Framework & Spring Boot
-                                        Hibernate (ORM)
-                                        <strong>Duration:</strong>25 June-31 October
-                                    </p>
-                                    <a href="#">
-                                        <button type="button" class="btn btn-primary">View Details</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card" style="width:18rem;height:550px">
-                                <img src="mern.png" alt="mern" width="286px" height="150px">
-                                <div class="card-body">
-                                    <h5 class="card-title">MERN Stack</h5>
-                                    <p class="card-text">
-                                        Master NoSQL databases to store, retrieve, and manage data efficiently in JSON
-                                        formats.
-                                        Build robust server-side logic, routing, and APIs for seamless backend
-                                        operations.
-                                        Create dynamic, responsive, and reusable user interfaces for the ultimate
-                                        frontend experience.
-                                        <strong>Duration:</strong>30 May-5 October
-                                    </p>
-                                    <a href="#">
-                                        <button type="button" class="btn btn-primary">View Details</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="hero-overlay">
+
+            <h1 class="display-4 fw-bold">
+                SkillUp Institute
+            </h1>
+
+            <p class="lead">
+                Learn Industry Ready Skills and Build Your Career
+            </p>
+
+            <a href="#courses"
+               class="btn btn-primary btn-lg">
+
+                Explore Courses
+
+            </a>
+
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselEx" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon bg-danger " aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselEx" data-bs-slide="next">
-            <span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
 
-    <div class="container">
+    </section>
 
-        <h1>Testimonials Section</h1>
+    <!-- STATISTICS -->
+
+    <section class="container py-5">
+
+        <div class="row text-center">
+
+            <div class="col-md-3">
+
+                <h2 class="text-primary fw-bold">
+                    5000+
+                </h2>
+
+                <p>
+                    Students Trained
+                </p>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <h2 class="text-success fw-bold">
+                    50+
+                </h2>
+
+                <p>
+                    Courses
+                </p>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <h2 class="text-danger fw-bold">
+                    100+
+                </h2>
+
+                <p>
+                    Expert Trainers
+                </p>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <h2 class="text-warning fw-bold">
+                    90%
+                </h2>
+
+                <p>
+                    Placement Support
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- POPULAR COURSES -->
+
+    <section id="courses" class="container py-5">
+
+        <h2 class="section-title">
+            Popular Courses
+        </h2>
+
+        <div class="slider">
+
+            <div class="slide-track">
+
+                <div class="course-card">
+                    <div class="course-image-wrap">
+                        <img src="python.jpg">
+                    </div>
+                    <h5>Python Programming</h5>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image-wrap">
+                        <img src="java.png">
+                    </div>
+                    <h5>Java Programming</h5>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image-wrap">
+                        <img src="aiml.jpg">
+                    </div>
+                    <h5>AI & Machine Learning</h5>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image-wrap">
+                        <img src="pythonfsd.jpg">
+                    </div>
+                    <h5>Python Full Stack</h5>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image-wrap">
+                        <img src="javafsd.png">
+                    </div>
+                    <h5>Java Full Stack</h5>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image-wrap">
+                        <img src="mern.png">
+                    </div>
+                    <h5>MERN Stack</h5>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image-wrap">
+                        <img src="mean.png">
+                    </div>
+                    <h5>MEAN Stack</h5>
+                </div>
+
+                <!-- Duplicate for smooth scrolling -->
+
+                <div class="course-card">
+                    <div class="course-image-wrap">
+                        <img src="python.jpg">
+                    </div>
+                    <h5>Python Programming</h5>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image-wrap">
+                        <img src="java.png">
+                    </div>
+                    <h5>Java Programming</h5>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image-wrap">
+                        <img src="aiml.jpg">
+                    </div>
+                    <h5>AI & Machine Learning</h5>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image-wrap">
+                        <img src="pythonfsd.jpg">
+                    </div>
+                    <h5>Python Full Stack</h5>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image-wrap">
+                        <img src="javafsd.png">
+                    </div>
+                    <h5>Java Full Stack</h5>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image-wrap">
+                        <img src="mern.png">
+                    </div>
+                    <h5>MERN Stack</h5>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image-wrap">
+                        <img src="mean.png">
+                    </div>
+                    <h5>MEAN Stack</h5>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+
+            <a href="courses.html"
+               class="btn btn-primary btn-lg">
+
+                View More Courses →
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- TESTIMONIALS -->
+
+    <section class="container py-5">
+
+        <h2 class="section-title">
+            Student Testimonials
+        </h2>
+
         <div class="row">
-            <div class="col-4">
-                <div class="card">
+
+            <div class="col-md-4 mb-3">
+
+                <div class="card testimonial-card testimonial-blue">
+
                     <div class="card-body">
-                        <div class="card-title">Alice</div>
-                        <div class="card-text fst-italic">
-                            <Strong>Address:</Strong>Hyderabad<br>
-                            <strong>Phone Number:</strong>9948682359<BR>
-                            <strong>Email:</strong>alice@gmail.com<br>
-                            <strong>Social Media Links:</strong>Instagram
-                        </div>
+
+                        <h5>Rahul</h5>
+
+                        <p>
+                            Excellent faculty and practical training.
+                        </p>
+
                     </div>
+
                 </div>
+
             </div>
-            <div class="col-4">
-                <div class="card">
+
+            <div class="col-md-4 mb-3">
+
+                <div class="card testimonial-card testimonial-purple">
+
                     <div class="card-body">
-                        <div class="card-title">Mike</div>
-                        <div class="card-text fst-italic">
-                            <Strong>Address:</Strong>Hyderabad<br>
-                            <strong>Phone Number:</strong>9948682359<BR>
-                            <strong>Email:</strong>alice@gmail.com<br>
-                            <strong>Social Media Links:</strong>Instagram
-                        </div>
+
+                        <h5>Priya</h5>
+
+                        <p>
+                            Helped me secure my first software job.
+                        </p>
+
                     </div>
+
                 </div>
+
             </div>
-            <div class="col-4">
-                <div class="card">
+
+            <div class="col-md-4 mb-3">
+
+                <div class="card testimonial-card testimonial-green">
+
                     <div class="card-body">
-                        <div class="card-title">Dustin</div>
-                        <div class="card-text fst-italic">
-                            <Strong>Address:</Strong>Hyderabad<br>
-                            <strong>Phone Number:</strong>9948682359<BR>
-                            <strong>Email:</strong>alice@gmail.com<br>
-                            <strong>Social Media Links:</strong>Instagram
-                        </div>
+
+                        <h5>Arjun</h5>
+
+                        <p>
+                            Best institute for Full Stack Development.
+                        </p>
+
                     </div>
+
                 </div>
+
             </div>
+
         </div>
-    </div>
-    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h4>
+            SkillUp Institute
+        </h4>
+
+        <p>
+            Learn Industry Ready Skills and Build Your Career
+        </p>
+
+        <p>
+            Hyderabad, Telangana
+        </p>
+
+        <p>
+            +91 9876543210 | info@skillup.com
+        </p>
+
+        <hr>
+
+        <p>
+            © 2026 SkillUp Institute. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        window.addEventListener("scroll", function () {
+
+            const navbar = document.querySelector(".navbar");
+
+            if (window.scrollY > 50) {
+                navbar.style.background = "#0d6efd";
+            } else {
+                navbar.style.background = "rgba(0,0,0,0.3)";
+            }
+
+        });
+    </script>
+
 </body>
 
 </html>
